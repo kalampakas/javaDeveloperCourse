@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84784781-6c76-49c2-ac7b-599e8e7b7a37" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XIZAPBHdGbd50AaaDeHazISxUe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.pgi.Main" />
+      <module name="Point" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84784781-6c76-49c2-ac7b-599e8e7b7a37" name="Default Changelist" comment="" />
+      <created>1580735424040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580735424040</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="300" key="#com.intellij.ide.util.MemberChooser" timestamp="1580736938749">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="765" y="300" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1580736938749" />
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580737478823">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1580737478823" />
+    <state x="342" y="207" key="new project wizard" timestamp="1580737937885">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="342" y="207" key="new project wizard/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1580737937885" />
+  </component>
+</project>
