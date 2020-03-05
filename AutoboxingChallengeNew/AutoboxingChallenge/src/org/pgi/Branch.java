@@ -30,6 +30,12 @@ public class Branch {
         this.customers.listIterator().set(customer.addTransaction(transaction));
     }
 
+    public void listCustomers(ArrayList<Customer> customers) {
+        for(int i=0; i<customers.size; i++) {
+            System.out.println("Customer name:" + this.customers.item[i].name );
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

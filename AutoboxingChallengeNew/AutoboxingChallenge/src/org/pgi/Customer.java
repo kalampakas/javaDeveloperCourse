@@ -17,6 +17,12 @@ public class Customer {
         return this;
     }
 
+    public void listTransactions() {
+        for(int i=0;i<transactions.size;i++){
+            System.out.println("Transaction: "+ transactions.item[i]);
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

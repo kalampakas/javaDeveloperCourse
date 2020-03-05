@@ -22,6 +22,24 @@ public class Banks {
         this.branches = branches;
     }
 
+    public void addBranch(Branch newBranch) {
+        this.branches.add(newBranch);
+    }
+
+    public void addCustomer(Branch branch, Customer customer) {
+        this.branches.equals(branch).Customers.add(customer);
+    }
+
+    public void addTransaction(Branch branch, Customer customer, Transaction transaction) {
+        this.branches.equals(branch).equals(customer).addTransaction(transaction);
+    }
+
+    public void listBranches() {
+        for(int i=0;i<this.branches.size;i++) {
+            System.out.println("Branch name:"+ this.branches.item[i].name );
+        }
+    }
+
     public Banks(String bankname, ArrayList<Branch> branches) {
         this.bankname = bankname;
         this.branches = branches;

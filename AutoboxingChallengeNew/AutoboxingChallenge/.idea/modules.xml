@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AutoboxingChallenge.iml" filepath="$PROJECT_DIR$/.idea/AutoboxingChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutoboxingChallenge.iml" filepath="$PROJECT_DIR$/AutoboxingChallenge.iml" />
     </modules>
   </component>
 </project>
