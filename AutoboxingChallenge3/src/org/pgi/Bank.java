@@ -1,5 +1,7 @@
 package org.pgi;
 
+import me.tongfei.progressbar.ProgressBar;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -14,6 +16,7 @@ public class Bank {
     public boolean addBranch(String branchName){
         if(findBranch(branchName)==null) {
             this.branches.add(new Branch(branchName));
+            System.out.println("Adding new branch: "+branchName);
             return true;
         }
         return false;
@@ -22,6 +25,7 @@ public class Bank {
     public boolean addCustomer(String branchName, String customerName, double transaction) {
         Branch branch = findBranch(branchName);
         if(branch!=null) {
+            System.out.println("Adding new customer,"+customerName);
             return branch.newCustomer(customerName,transaction);
         }
         else {
@@ -33,6 +37,7 @@ public class Bank {
     public boolean addCustomerTransaction(String branchName, String customerName, double transaction) {
         Branch branch = findBranch(branchName);
         if(branch!=null) {
+            System.out.println("Adding new customer transaction");
             return branch.addTransaction(customerName, transaction);
         } else {
             System.out.println("Branch doesn't exist");
@@ -41,15 +46,22 @@ public class Bank {
     }
 
     private Branch findBranch(String branchName) {
-        while(this.branches.listIterator().nextIndex()<this.branches.size() && this.branches.listIterator()!=null){
-            Main.searching();
-            if(this.branches.listIterator().next().getBranchName().equals(branchName)) {
-            return this.branches.listIterator().next();
+        try (ProgressBar pb = new ProgressBar("Looking for branch",this.branches.size())) {
+            for (Branch b : branches) {
+                pb.step();
+                if (b.getBranchName().equals(branchName)) {
+                    System.out.println("Found branch " + branchName);
+                    return b;
+                } else System.out.println("Could not find " + branchName);
             }
-            else this.branches.listIterator().next();
-        }
-            System.out.println("Could not find "+ branchName +" branch");
             return null;
+        }
+    }
+
+    public void listBranches(){
+        for(Branch i: branches) {
+            System.out.println("Branch: "+ i.getBranchName());
+        }
     }
 
     public boolean listCustomers(String branchName, boolean showTransactions) {

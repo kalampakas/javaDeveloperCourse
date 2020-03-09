@@ -27,11 +27,11 @@ public class Banks {
     }
 
     public void addCustomer(Branch branch, Customer customer) {
-        this.branches.equals(branch).Customers.add(customer);
+        ;
     }
 
-    public void addTransaction(Branch branch, Customer customer, Transaction transaction) {
-        this.branches.equals(branch).equals(customer).addTransaction(transaction);
+    public void addTransaction(Branch branch, Customer customer, double transaction) {
+        while()
     }
 
     public void listBranches() {

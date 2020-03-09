@@ -44,24 +44,19 @@ public class Branch {
     }
 
     private Customer findCustomer(String customerName) {
-        while(this.customers.listIterator().nextIndex()<this.customers.size() && this.customers.listIterator()!=null) {
-            Main.searching();
-            if(this.customers.listIterator().next().getName().equals(customerName)) {
-                return this.customers.listIterator().next();
-            }
-            else this.customers.listIterator().next();
+        for(Customer s: customers) {
+            if (s.equals(customerName)) return s;
+            else System.out.println("Customer "+customerName+" not found");
         }
-        System.out.println("Customer not found");
         return null;
     }
 
     public void listCustomers(boolean showTransaction) {
-        while(this.customers.iterator().hasNext()) {
-            System.out.println("Customer:"+this.customers.iterator().next().getName());
+        for(Customer s: customers) {
+            System.out.println("Customer:"+s.getName());
             if(showTransaction) {
-                this.customers.iterator().next().listTransactions();
+                s.listTransactions();
             }
-            this.customers.iterator().next();
         }
     }
     @Override

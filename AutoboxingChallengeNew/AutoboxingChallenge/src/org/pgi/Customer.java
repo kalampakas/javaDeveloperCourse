@@ -18,8 +18,8 @@ public class Customer {
     }
 
     public void listTransactions() {
-        for(int i=0;i<transactions.size;i++){
-            System.out.println("Transaction: "+ transactions.item[i]);
+        while(this.transactions.listIterator().hasNext() && this.transactions.listIterator().nextIndex()<this.transactions.size()) {
+            System.out.println("Transaction: "+this.transactions.listIterator().next().doubleValue());
         }
     }
 

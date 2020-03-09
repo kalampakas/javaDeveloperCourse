@@ -25,9 +25,8 @@ public class Customer {
     }
 
     public void listTransactions() {
-        while(this.transactions.iterator().hasNext()) {
-            System.out.println("Transaction:"+this.transactions.iterator().next());
-            this.transactions.iterator().next();
+        for(Double cust: transactions) {
+            System.out.println("Transaction:"+cust);
         }
     }
     @Override

@@ -30,9 +30,9 @@ public class Branch {
         this.customers.listIterator().set(customer.addTransaction(transaction));
     }
 
-    public void listCustomers(ArrayList<Customer> customers) {
-        for(int i=0; i<customers.size; i++) {
-            System.out.println("Customer name:" + this.customers.item[i].name );
+    public void listCustomers() {
+        while(this.customers.listIterator().hasNext() && this.customers.listIterator().nextIndex()<this.customers.size()) {
+            System.out.println("Customer: "+this.customers.listIterator().next().getName());
         }
     }
 

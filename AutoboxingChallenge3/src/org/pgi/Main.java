@@ -1,5 +1,7 @@
 package org.pgi;
 
+import me.tongfei.progressbar.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,6 +14,7 @@ public class Main {
         bank.addCustomerTransaction("Pawnee","Tim",4.33);
         bank.listCustomers("Pawnee",true);
         bank.addBranch("Idaho");
+        bank.listBranches();
         bank.addCustomer("Idaho","Mike",100.00);
         bank.addCustomerTransaction("Pawnee","Joe",12.33);
         bank.listCustomers("Idaho",true);
